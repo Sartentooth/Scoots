@@ -11,8 +11,8 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
   max-width: 1280px;
+  font-size: 16px;
   margin: 0 auto;
   padding: 0;
 }
@@ -21,7 +21,7 @@ html {
   --bg-color-body: rgb(107, 100, 107);
   --txt-align-center: center;
 
-  --font-logo: "hey-eloise-watercolor", sans-serif;
+  --font-logo: "chantal", "hey-eloise-watercolor", sans-serif;
   --font-text: "Quicksand", sans-serif;
 }
 
@@ -55,6 +55,7 @@ a:hover {
 }
 
 .menu li {
+  margin: 0;
   padding: 15px 5px;
   white-space: nowrap;
 }
@@ -114,6 +115,7 @@ a:hover {
 
 .toggle {
   font-size: 1.2rem;
+  font-weight: 600;
   width: 30px;
   height: 30px;
 }
