@@ -51,4 +51,33 @@
     color: #ddd;
   }
   /*  END NAVBAR CONFIG  */
+
+  /*  HERO BUTTON  */
+  .hero a:hover {
+    color: var(--bg-color-body);
+    animation: mylastmove 0.5s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes mylastmove {
+    from {background: var(--bg-color-body);}
+    to {background: whitesmoke;}
+  }
+
+  .hero a {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero img.logito {
+    display:inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
 }
