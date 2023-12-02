@@ -12,7 +12,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 1280px;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 auto;
   padding: 0;
 }
@@ -22,7 +22,7 @@ html {
   --txt-align-center: center;
 
   --font-logo: "chantal", "hey-eloise-watercolor", sans-serif;
-  --font-text: "Quicksand", sans-serif;
+  --font-text: "pf-reminder", "Quicksand", sans-serif;
 }
 
 body {
