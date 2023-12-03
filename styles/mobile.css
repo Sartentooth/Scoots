@@ -18,10 +18,17 @@ html {
 }
 
 :root {
-  --bg-color-body: #6b646b;
-  --bg-color-navbar: #222;
-  --font-color-navbar: whitesmoke;
+  --bg-color-body: whitesmoke;
+  --bg-color-navbar: #343234e9;
   --br-color-a: whitesmoke;
+  --br-color-button-a: #343234e9;
+  --font-color-text: #343234;
+  --font-color-navbar: whitesmoke;
+  --font-color-navbar-underline-home: red;
+  --font-color-navbar-underline-rent: yellow;
+  --font-color-navbar-underline-rese: pink;
+  --font-color-navbar-underline-cont: orange;
+  --font-color-navbar-underline-logo: lightblue;
 
   --h1--header-font-size: 2rem;
   --h2--header-font-size: 1.5rem;
@@ -35,10 +42,12 @@ html {
 /*  GLOBAL ELEMENTS SETTINGS*/
 body {
   font-family: var(--font-text-para);
+  color: var(--font-color-text);
   background: var(--bg-color-body);
 }
 
 h1 {
+  margin: 50px 2vw;
   text-align: center;
   font-family: var(--font-logo-h1);
   font-size: var(--h1--header-font-size);
@@ -46,7 +55,9 @@ h1 {
 
 h2,
 h3 {
+  margin-top: 40px;
   font-family: var(--font-text-h2-h6-para);
+  font-weight: bold;
 }
 
 h2 {
@@ -59,6 +70,14 @@ h3 {
 
 .hr-line {
   margin-top: -6px;
+}
+
+section {
+  margin: 10px 2vw;
+}
+
+p {
+  margin: 5px 0;
 }
 
 /*  NAV BAR CONFIG  */
@@ -78,8 +97,29 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a.blue:hover {
+  text-decoration: underline var(--font-color-navbar-underline-logo);
+  text-decoration-thickness: 5px;
+}
+
+a.red:hover {
+  text-decoration: underline var(--font-color-navbar-underline-home);
+  text-decoration-thickness: 5px;
+}
+
+a.yellow:hover {
+  text-decoration: underline var(--font-color-navbar-underline-rent);
+  text-decoration-thickness: 5px;
+}
+
+a.pink:hover {
+  text-decoration: underline var(--font-color-navbar-underline-rese);
+  text-decoration-thickness: 5px;
+}
+
+a.orange:hover {
+  text-decoration: underline var(--font-color-navbar-underline-cont);
+  text-decoration-thickness: 5px;
 }
 
 .logo img {
@@ -94,7 +134,13 @@ a:hover {
 }
 
 .button.signin {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid gray;
+}
+
+.button.signin:hover,
+.button.login:hover {
+  text-decoration: underline green;
+  text-decoration-thickness: 5px;
 }
 
 .menu {
@@ -169,13 +215,23 @@ a:hover {
   text-align: center;
   border: 2px solid var(--br-color-a);
   border-radius: 8px;
-  background: rgba(107, 102, 107, 0.502);
+  background: var(--br-color-button-a);
+}
+
+.hero a:hover {
+  color: #343234;
+  background: var(--bg-color-body);
 }
 
 .hero img.logo {
   display: none;
 }
-/*  Section Article */
+
+/*  Section CARD INFORMATION*/
+.title,
+.subtitle.slogan {
+  text-align: center;
+}
 
 .hashtag {
   font-weight: bold;
